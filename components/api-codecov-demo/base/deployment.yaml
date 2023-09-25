@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: api-codecov-demo
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads/xjiang-tenant/codecov-demo/api-codecov-demo@sha256:2ea2dbac2cb601d3eb70b1f5504082914cfeee2402bcebe786d042d3755c271f
         name: my-python
         ports:
         - containerPort: 8081
