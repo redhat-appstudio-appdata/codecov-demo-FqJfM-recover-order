@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: api-codecov-demo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/xjiang-tenant/codecov-demo/api-codecov-demo@sha256:2ea2dbac2cb601d3eb70b1f5504082914cfeee2402bcebe786d042d3755c271f
+        name: my-python
+        resources: {}
+status: {}
